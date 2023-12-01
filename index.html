@@ -1,0 +1,105 @@
+
+<html>
+  <head>
+    <link rel="stylesheet" href="css t2 unbundl.css">
+    <title>Task 2</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Build Your Own Chocolate Pack</div>
+      <p>*Use arrows in the input to change the quantities </p>
+      <div class="products">
+        <div class="product" data-name="Dark Chocolate" data-price="50">
+          <img
+            src="https://scx2.b-cdn.net/gfx/news/hires/2018/darkchocolate.jpg"
+            alt="Dark Chocolate"
+          />
+          <h3>Dark Chocolate</h3>
+          <p>₹50</p>
+          <input
+            type="number"
+            min="0"
+            max="8"
+            value="0"
+            onkeydown="return false"
+            onchange="updateSummary()"
+          />
+        </div>
+        <div class="product" data-name="Milk Chocolate" data-price="40">
+          <img
+            src="https://www.rentallplaza.net/wp-content/uploads/2015/02/milk-chocolate.jpg"
+            alt="Milk Chocolate"
+          />
+          <h3>Milk Chocolate</h3>
+          <p>₹40</p>
+          <input
+            type="number"
+            min="0"
+            max="8"
+            value="0"
+            onkeydown="return false"
+            onchange="updateSummary()"
+          />
+        </div>
+        <div class="product" data-name="White Chocolate" data-price="60">
+          <img
+            src="https://www.finedininglovers.com/sites/g/files/xknfdk626/files/2020-11/white_chocolate%C2%A9iStock.jpg"
+            alt="White Chocolate"
+          />
+          <h3>White Chocolate</h3>
+          <p>₹60</p>
+          <input
+            type="number"
+            min="0"
+            max="8"
+            value="0"
+            onkeydown="return false"
+            onchange="updateSummary()"
+          />
+        </div>
+        <div class="product" data-name="Fruit Chocolate" data-price="70">
+          <img
+            src="https://www.agoudalife.com/wp-content/uploads/choc-berry-3.jpg"
+            alt="Fruit Chocolate"
+          />
+          <h3>Fruit Chocolate</h3>
+          <p>₹70</p>
+          <input
+            type="number"
+            min="0"
+            max="8"
+            value="0"
+            onkeydown="return false"
+            onchange="updateSummary()"
+          />
+        </div>
+        <div class="product" data-name="Hazelnut Chocolate" data-price="70">
+            <img
+              src="https://4.imimg.com/data4/VY/HM/MY-2097608/chocolate-hazelnut-1000x1000.jpg"
+              alt="Hazelnut Chocolate"
+            />
+            <h3>Hazelnut Chocolate</h3>
+            <p>₹70</p>
+            <input
+              type="number"
+              min="0"
+              max="8"
+              value="0"
+              onkeydown="return false"
+              onchange="updateSummary()"
+            />
+        </div>
+        
+      </div>
+      <div class="summary">
+        <h2>Your Custom Pack</h2>
+        <ul id="summary-items">
+        </ul>
+        <p id="summary-total">Total: ₹0</p>
+        <button id="summary-button" onclick="placeOrder()">Place Order</button>
+      </div>
+    </div>
+    
+  </body>
+  <script defer src="js t2 unbundl.js"></script>
+</html>
